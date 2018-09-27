@@ -4,7 +4,7 @@
   "description": "Example project of multiplayer game made in Untiy using Colyseus",
   "main": "build/main.js",
   "scripts": {
-    "dev": "nodemon --watch src --exec 'ts-node src/main.ts'",
+    "dev": "nodemon --watch src/**/*.* --exec \"ts-node src/main.ts\"",
     "build": "rm -rf build && tsc",
     "start": "node build/main.js"
   },

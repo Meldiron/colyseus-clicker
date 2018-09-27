@@ -70,11 +70,11 @@ public class ColyseusClient : MonoBehaviour
         {
             IndexedDictionary<string, object> player = (IndexedDictionary<string, object>)change.value;
             Player p = new Player();
+            p.id = Convert.ToString(change.path["playerId"]);
 
             if (change.operation == "add")
             {
                 p.clicks = Convert.ToInt16(player["clicks"]);
-                p.id = Convert.ToString(player["id"]);
                 p.nick = Convert.ToString(player["nick"]);
                 p.place = Convert.ToInt16(player["place"]);
 

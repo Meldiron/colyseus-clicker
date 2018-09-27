@@ -87,6 +87,8 @@ export class State {
   private _removePlayerAction(playerId: string) {
     if (this.players[playerId]) {
       delete this.players[playerId];
+
+      this._recalculatePlaces();
     }
   }
 

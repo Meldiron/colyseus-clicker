@@ -80,6 +80,7 @@ class State {
     _removePlayerAction(playerId) {
         if (this.players[playerId]) {
             delete this.players[playerId];
+            this._recalculatePlaces();
         }
     }
     _coolieClickAction(playerId) {

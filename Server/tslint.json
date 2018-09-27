@@ -1,0 +1,57 @@
+{
+  "linterOptions": {
+    "exclude": ["src/*.d.ts"]
+  },
+  "extends": "tslint:recommended",
+  "rules": {
+    "no-empty-interface": false,
+    "no-namespace": false,
+    "max-classes-per-file": false,
+    "arrow-parens": false,
+    "class-name": true,
+    "curly": false,
+    "eofline": true,
+    "indent": ["spaces"],
+    "object-literal-key-quotes": false,
+    "max-line-length": [true, 200],
+    "member-access": [true, "no-public"],
+    "no-bitwise": false,
+    "member-ordering": [
+      true,
+      "public-before-private",
+      "static-before-instance",
+      "variables-before-functions"
+    ],
+    "forin": false,
+    "prefer-const": true,
+    "deprecation": true,
+    "no-arg": true,
+    "no-console": false,
+    "no-construct": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "quotemark": [true, "single"],
+    "semicolon": false,
+    "trailing-comma": true,
+    "triple-equals": true,
+    "variable-name": false,
+    "interface-name": [false, "always-prefix"],
+
+    "only-arrow-functions": false,
+    "no-string-literal": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "no-string-throw": true,
+    "array-type": [true, "array"]
+  }
+}

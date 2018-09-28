@@ -15,6 +15,7 @@ public class ColyseusClient : MonoBehaviour
     public InputField inputNick;
 
 
+    private string uri = "ws://localhost:3000";
     private Client client = null;
     private Room room = null;
     private IndexedDictionary<string, Player> players = new IndexedDictionary<string, Player>();
@@ -52,7 +53,7 @@ public class ColyseusClient : MonoBehaviour
         }
 
 
-        client = new Client("ws://localhost:3000");
+        client = new Client(uri);
         yield return StartCoroutine(client.Connect());
 
         Dictionary<string, object> joinData = new Dictionary<string, object>();

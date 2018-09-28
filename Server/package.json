@@ -12,11 +12,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/faker": "^4.1.4",
-    "@types/node": "^10.11.0",
     "colyseus": "^0.9.15",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "faker": "^4.1.0",
     "http": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/faker": "^4.1.4",
+    "@types/node": "^10.11.0"
   }
 }
